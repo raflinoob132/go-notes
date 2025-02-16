@@ -1,0 +1,11 @@
+# Ignore binaries and build files
+/app
+*.exe
+*.out
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Ignore environment files
+.env
