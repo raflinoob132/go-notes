@@ -21,9 +21,9 @@ var favoriteModel = &models.Favorite{}
 func ConnectDB(config *dbmodel.Config) {
 	var err error
 	// Format DSN untuk PostgreSQL di Railway
-	dsn := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
-		config.DBHost, config.DBPort, config.DBUserName, config.DBUserPassword, config.DBName)
-
+	// dsn := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
+	// 	config.DBHost, config.DBPort, config.DBUserName, config.DBUserPassword, config.DBName)
+	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=require TimeZone=Asia/Shanghai", config.DBHost, config.DBUserName, config.DBUserPassword, config.DBName, config.DBPort)
 	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{}) // Gunakan driver postgres
 	if err != nil {
 		log.Fatal("Gagal hubungkan ke database: " + err.Error())
