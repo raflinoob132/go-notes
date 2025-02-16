@@ -5,10 +5,11 @@ import (
 	"log"
 	"net/http"
 
-	//"replika-golang-fiber/credential/usermodel"
-	"replika-golang-fiber/initialize"
-	"replika-golang-fiber/models"
+	//"github.com/raflinoob132/go-notes/credential/usermodel"
 	"time"
+
+	"github.com/raflinoob132/go-notes/initialize"
+	"github.com/raflinoob132/go-notes/models"
 
 	"golang.org/x/crypto/bcrypt"
 )
@@ -62,8 +63,8 @@ func RegisterHandler(w http.ResponseWriter, r *http.Request) {
 // import (
 // 	"encoding/json"
 // 	"net/http"
-// 	"replika-golang-fiber/credential/usermodel"
-// 	"replika-golang-fiber/initialize"
+// 	"github.com/raflinoob132/go-notes/credential/usermodel"
+// 	"github.com/raflinoob132/go-notes/initialize"
 // 	"time"
 
 // 	"golang.org/x/crypto/bcrypt"

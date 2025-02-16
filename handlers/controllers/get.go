@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	//"replika-golang-fiber/handlers/controllers/crudmodel"
-	"replika-golang-fiber/models"
-	"replika-golang-fiber/query"
+	//"github.com/raflinoob132/go-notes/handlers/controllers/crudmodel"
+	"github.com/raflinoob132/go-notes/models"
+	"github.com/raflinoob132/go-notes/query"
 )
 
 func GetNotesHandler(w http.ResponseWriter, r *http.Request) {

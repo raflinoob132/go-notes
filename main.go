@@ -4,9 +4,12 @@ import (
 	"log"
 	"net/http"
 	"os"
-	controllers "replika-golang-fiber/handlers/controllers"
-	"replika-golang-fiber/handlers/credential"
-	"replika-golang-fiber/initialize"
+
+	"github.com/raflinoob132/go-notes/initialize"
+
+	"github.com/raflinoob132/go-notes/handlers/credential"
+
+	controllers "github.com/raflinoob132/go-notes/handlers/controllers"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/cors"

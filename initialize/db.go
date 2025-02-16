@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"replika-golang-fiber/initialize/dbmodel"
-	"replika-golang-fiber/models"
+
+	"github.com/raflinoob132/go-notes/initialize/dbmodel"
+	"github.com/raflinoob132/go-notes/models"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

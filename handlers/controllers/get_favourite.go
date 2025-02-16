@@ -3,8 +3,9 @@ package controllers
 import (
 	"encoding/json"
 	"net/http"
-	"replika-golang-fiber/models"
-	"replika-golang-fiber/query"
+
+	"github.com/raflinoob132/go-notes/models"
+	"github.com/raflinoob132/go-notes/query"
 )
 
 func GetFavoriteHandler(w http.ResponseWriter, r *http.Request) {

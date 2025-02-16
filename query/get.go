@@ -1,9 +1,10 @@
 package query
 
 import (
-	"replika-golang-fiber/initialize"
-	"replika-golang-fiber/models"
 	"time"
+
+	"github.com/raflinoob132/go-notes/initialize"
+	"github.com/raflinoob132/go-notes/models"
 )
 
 func GetNotes(payload models.SearchPayload) ([]map[string]interface{}, int64, error) {

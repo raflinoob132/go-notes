@@ -1,4 +1,4 @@
-module replika-golang-fiber
+module github.com/raflinoob132/go-notes
 
 go 1.22.5
 

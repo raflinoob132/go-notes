@@ -4,10 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	//"replika-golang-fiber/credential/models"
-	"replika-golang-fiber/initialize"
-	"replika-golang-fiber/models"
+	//"github.com/raflinoob132/go-notes/credential/models"
 	"time"
+
+	"github.com/raflinoob132/go-notes/initialize"
+	"github.com/raflinoob132/go-notes/models"
 
 	"github.com/golang-jwt/jwt/v4"
 	"golang.org/x/crypto/bcrypt"

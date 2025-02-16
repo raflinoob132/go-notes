@@ -2,8 +2,9 @@ package controllers
 
 import (
 	"net/http"
-	"replika-golang-fiber/initialize"
 	"strconv"
+
+	"github.com/raflinoob132/go-notes/initialize"
 
 	"github.com/go-chi/chi/v5"
 )

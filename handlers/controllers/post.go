@@ -4,10 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	//"replika-golang-fiber/controllers/crudmodel"
-	"replika-golang-fiber/initialize"
-	"replika-golang-fiber/models"
+	//"github.com/raflinoob132/go-notes/controllers/crudmodel"
 	"time"
+
+	"github.com/raflinoob132/go-notes/initialize"
+	"github.com/raflinoob132/go-notes/models"
 
 	"gorm.io/gorm"
 )

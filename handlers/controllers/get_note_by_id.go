@@ -4,9 +4,10 @@ import (
 	"encoding/json"
 	"errors"
 	"net/http"
-	"replika-golang-fiber/initialize"
-	"replika-golang-fiber/models"
 	"strconv"
+
+	"github.com/raflinoob132/go-notes/initialize"
+	"github.com/raflinoob132/go-notes/models"
 
 	"github.com/go-chi/chi/v5"
 	"gorm.io/gorm"
