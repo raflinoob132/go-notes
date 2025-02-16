@@ -1,0 +1,29 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: SSH ke Server dan Jalankan Docker
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ~/my-golang-app || git clone https://github.com/username/repository.git ~/my-golang-app
+            cd ~/my-golang-app
+            git pull origin main
+            docker stop golang-crud || true
+            docker rm golang-crud || true
+            docker build -t my-golang-app .
+            docker run -d -p 8080:8080 --name golang-crud my-golang-app
