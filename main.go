@@ -15,9 +15,12 @@ import (
 
 func main() {
 	// Load .env
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatalf("Error loading .env file: %v", err)
+	if os.Getenv("RAILWAY_ENVIRONMENT") == "" {
+		// Hanya load .env jika tidak berjalan di Railway
+		err := godotenv.Load()
+		if err != nil {
+			log.Fatal("Error loading .env file")
+		}
 	}
 
 	// Load config
